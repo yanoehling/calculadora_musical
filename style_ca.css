@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(31, 151, 172);
+    align-content: center;
+    align-items: center;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+div#inputs{
+    font-size: 18px;
+    align-items: center;
+    align-content: center;
+}
+
+select#select{
+    height: 33px;
+    width: 210px;
+    text-align: left;
+
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 800;
+    margin: 5px;
+}
+
+input#acordes{
+    margin-left: 15px;
+    transform: scale(2)
+    
+}
+
+input#setimas{
+    margin-left: 17px;
+    transform: scale(2)
+}
+
+div#notas{
+    font-size: 18px;
+    align-items: center;
+    align-content: center;
+}
+
+button#limpar{
+    background-color: rgb(252, 197, 205);
+    margin-top: 10px;
+    margin-left: 150px;
+    height: 50px;
+    width: fit-content;
+    border-radius: 20px;
+    font-style: italic;
+    font-size: 15px;
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.padrao{
+    width: 85px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: '';
+    border-color: '';
+}
+
+/*.clicado{
+    width: 85px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: '#269962';
+    color: 'white';
+    border-color: 'lightsilver';    
+}
+
+.na_escala{
+    width: 85px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: '#fff238';
+    color: 'black';
+    border-color: 'lightgrey';
+}
+
+.ignorado{
+    width: 85px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: '';
+    color: 'grey';
+    border-color: '';
+}*/

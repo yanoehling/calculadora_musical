@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Harmônico</title>
+    <link rel="stylesheet" href="style_ca.css">
+</head>
+<body>
+    <header>
+        <h1>Campo Harmônico</h1>
+    </header>
+    <section id="section">
+        <div id="inputs">
+            <strong>
+            <p>Escolha sua escala/modo: 
+            <select id="select"></select></p>
+            <p>Mostrar acordes: 
+            <input type="checkbox" id="acordes" onclick="cores(null, 'LIMPAR')"></p>
+            <p>Mostrar sétimas: 
+            <input type="checkbox" id="setimas" onclick="cores(null, 'LIMPAR')"></p>
+            <br>
+            </strong>
+        </div>
+        <div id="notas">
+            <strong>Clique no tom pra ver as notas da escala:</strong>
+            <br><br>
+        </div>
+    </section>
+    <footer>
+        <p>@yanmano_</p>
+    </footer>
+    <script src="script_ca.js"></script>
+</body>
+</html>
