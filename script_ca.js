@@ -32,7 +32,7 @@ botao.id = 'limpar';
 botao.innerText = 'Limpar';
 div.appendChild(botao);
 botao = document.getElementById('limpar');
-botao.onclick = function run_cores(){cores(null, 'limpar')}
+botao.onclick = function run_cores(){cores(null, 'limpar')};
 
 // executa as funções se algum botão for clicado
 document.body.addEventListener("click", event => {
@@ -77,9 +77,9 @@ function finalizacao(id_clicado, listas, nota_escolhida){
         let botao_atual = document.getElementById(`${nota_atual}`);
         if (modo_escolhido[cont] == 1){   
             if (botao_atual.id == id_clicado){
-                cores(botao_atual, 'CLICADO')
+                cores(botao_atual, 'CLICADO');
             } else {
-                cores(botao_atual, 'NA_ESCALA')
+                cores(botao_atual, 'NA_ESCALA');
             }
             acordes_box = document.getElementById('acordes');
             setimas_box = document.getElementById('setimas');
@@ -88,6 +88,7 @@ function finalizacao(id_clicado, listas, nota_escolhida){
                 lista_acordes.shift();
                 if (setimas_box.checked){    
                     botao_atual.innerText += lista_setimas[0];
+                    botao_atual.innerText = botao_atual.innerText.replace('dim', '');
                     lista_setimas.shift();
                 }
             } else if (setimas_box.checked && acordes_box.checked === false){
