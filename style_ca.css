@@ -1,110 +1,111 @@
-body{
-    background-color: rgb(31, 151, 172);
-    align-content: center;
-    align-items: center;
+* {
+	font-weight: 700;
 }
 
-header{
-    color: white;
-    text-align: center;
+body {
+	background-color: rgb(31, 151, 172);
+	align-content: center;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-section{
-    background-color: white;
-    padding: 20px;
-    width: 350px;
-    border-radius: 10px;
-    margin: auto;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+header {
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
-div#inputs{
-    font-size: 18px;
-    align-items: center;
-    align-content: center;
+section {
+	background-color: white;
+	padding: 20px;
+	width: 350px;
+	border-radius: 10px;
+	margin: auto;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-select#select{
-    height: 33px;
-    width: 210px;
-    text-align: left;
-
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 800;
-    margin: 5px;
+select#select {
+	height: 33px;
+	width: 210px;
+	text-align: left;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 800;
+	margin: 5px;
 }
 
-input#acordes{
-    margin-left: 15px;
-    transform: scale(2)
-    
+#inputs {
+	display: grid;
+	gap: 20px;
+	margin-bottom: 20px;
 }
 
-input#setimas{
-    margin-left: 17px;
-    transform: scale(2)
+#inputs div + div {
+	display: flex;
+	gap: 15px;
+	justify-content: space-between;
+	max-width: calc(50% - 15px);
 }
 
-div#notas{
-    font-size: 18px;
-    align-items: center;
-    align-content: center;
+#inputs input {
+	transform: scale(2);
 }
 
-button#limpar{
-    background-color: rgb(252, 197, 205);
-    margin-top: 10px;
-    margin-left: 150px;
-    height: 50px;
-    width: fit-content;
-    border-radius: 20px;
-    font-style: italic;
-    font-size: 15px;
+div#notas {
+	font-size: 18px;
+	align-items: center;
+	align-content: center;
 }
 
-footer{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 16px;
+button#limpar {
+	background-color: rgb(252, 197, 205);
+	margin-top: 10px;
+	margin-left: 150px;
+	height: 50px;
+	width: fit-content;
+	border-radius: 20px;
+	font-style: italic;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
-
-.padrao{
-    width: 85px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: '';
-    border-color: '';
+button#limpar:hover {
+	background-color: rgb(230, 180, 185);
 }
 
-/*.clicado{
-    width: 85px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: '#269962';
-    color: 'white';
-    border-color: 'lightsilver';    
+footer {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 18px;
 }
 
-.na_escala{
-    width: 85px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 300;
-    background-color: '#fff238';
-    color: 'black';
-    border-color: 'lightgrey';
+.padrao {
+	width: 85px;
+	height: 60px;
+	font-size: 20px;
+	font-weight: 500;
+	transition: 0.5s;
+	cursor: pointer;
+	border: solid lightskyblue 1px;
+	border-radius: 10px;
+	margin: 1px;
+}
+.padrao:hover {
+	background: #ddd;
 }
 
-.ignorado{
-    width: 85px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 100;
-    background-color: '';
-    color: 'grey';
-    border-color: '';
-}*/
+@media (max-width: 400px) {
+	* {
+		margin-left: 0;
+		padding-left: 0;
+		/*box-sizing: content-box;*/
+	}
+	body {
+		scale: 85%;
+		align-content: center;
+		align-items: center;
+	}
+
+}
